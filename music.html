@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NF - Music Catalog</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">NF</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div style="text-align: center; margin-top: 50px;">
+            <h1>DISCOGRAPHY</h1>
+        </div>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="album">Albums</button>
+            <button class="filter-btn" data-filter="single">Singles</button>
+        </div>
+
+        <div class="music-grid">
+            
+            <div class="album-card" data-category="album">
+                <img src="images/fear-cover.jpg" alt="Fear Album">
+                <h3>FEAR</h3>
+                <p>2025</p>
+            </div>
+
+            <div class="album-card" data-category="album">
+                <img src="images/hope-cover.jpg" alt="Hope Album">
+                <h3>HOPE</h3>
+                <p>2023</p>
+            </div>
+
+            <div class="album-card" data-category="album">
+                <img src="images/search-cover.jpg" alt="The Search Album">
+                <h3>THE SEARCH</h3>
+                <p>2019</p>
+            </div>
+
+            <div class="album-card" data-category="single">
+                <img src="images/clouds-cover.jpg" alt="Clouds Single">
+                <h3>CLOUDS</h3>
+                <p>Single</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 NF Real Music. Student Project.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
