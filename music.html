@@ -28,34 +28,52 @@
             <button class="filter-btn" data-filter="single">Singles</button>
         </div>
 
-        <div class="music-grid">
+       <div class="music-grid">
             
-            <div class="album-card" data-category="album">
+            <div class="album-card" data-category="album" data-id="fear">
                 <img src="images/fear-cover.jpg" alt="Fear Album">
                 <h3>FEAR</h3>
                 <p>2025</p>
+                <button class="btn-small">View Tracks</button>
             </div>
 
-            <div class="album-card" data-category="album">
+            <div class="album-card" data-category="album" data-id="hope">
                 <img src="images/hope-cover.jpg" alt="Hope Album">
                 <h3>HOPE</h3>
                 <p>2023</p>
+                <button class="btn-small">View Tracks</button>
             </div>
 
-            <div class="album-card" data-category="album">
+            <div class="album-card" data-category="album" data-id="search">
                 <img src="images/search-cover.jpg" alt="The Search Album">
                 <h3>THE SEARCH</h3>
                 <p>2019</p>
+                <button class="btn-small">View Tracks</button>
             </div>
 
-            <div class="album-card" data-category="single">
+            <div class="album-card" data-category="single" data-id="clouds">
                 <img src="images/clouds-cover.jpg" alt="Clouds Single">
                 <h3>CLOUDS</h3>
                 <p>Single</p>
+                <button class="btn-small">View Tracks</button>
             </div>
 
         </div>
     </main>
+
+    <div id="album-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title">Album Title</h2>
+                <p id="modal-desc" class="modal-desc">Album Synopsis goes here...</p>
+                
+                <h3>Tracklist</h3>
+                <ul id="modal-tracklist">
+                    </ul>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2025 NF Real Music. Student Project.</p>
