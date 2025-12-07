@@ -245,3 +245,24 @@ footer {
     .hero-content h1 { font-size: 3rem; }
     .music-grid { padding: 20px; }
 }
+/* --- SOCIAL MEDIA FOOTER --- */
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px; /* Keeps icons consistent size */
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s;
+    opacity: 0.7; /* Slightly faded by default */
+}
+
+.social-links img:hover {
+    transform: scale(1.2); /* Micro-interaction: Grows on hover */
+    opacity: 1; /* Fully bright on hover */
+}
