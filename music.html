@@ -14,6 +14,8 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="music.html">Music</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="merch.html">Merch</a></li>
         </ul>
     </nav>
 
@@ -24,38 +26,69 @@
 
         <div class="filter-controls">
             <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="album">Albums</button>
-            <button class="filter-btn" data-filter="single">Singles</button>
+            <button class="filter-btn" data-filter="album">Studio Albums</button>
+            <button class="filter-btn" data-filter="mixtape">Mixtapes</button>
+            <button class="filter-btn" data-filter="ep">EPs</button>
         </div>
 
-       <div class="music-grid">
-            
-            <div class="album-card" data-category="album" data-id="fear">
-                <img src="images/fear-cover.jpg" alt="Fear Album">
-                <h3>FEAR</h3>
-                <p>2025</p>
-                <button class="btn-small">View Tracks</button>
+        <div class="music-grid">
+           
+            <div class="album-card" data-category="ep" data-id="nfep">
+                <img src="images/nfep-cover.jpg" alt="NF EP">
+                <h3>NF (EP)</h3>
+                <p>2014</p>
+                <button class="btn-small">View Details</button>
             </div>
 
-            <div class="album-card" data-category="album" data-id="hope">
-                <img src="images/hope-cover.jpg" alt="Hope Album">
-                <h3>HOPE</h3>
-                <p>2023</p>
-                <button class="btn-small">View Tracks</button>
+            <div class="album-card" data-category="album" data-id="mansion">
+                <img src="images/mansion-cover.jpg" alt="Mansion">
+                <h3>MANSION</h3>
+                <p>2015</p>
+                <button class="btn-small">View Details</button>
+            </div>
+
+            <div class="album-card" data-category="album" data-id="therapy">
+                <img src="images/therapy-cover.jpg" alt="Therapy">
+                <h3>THERAPY SESSION</h3>
+                <p>2016</p>
+                <button class="btn-small">View Details</button>
+            </div>
+
+            <div class="album-card" data-category="album" data-id="perception">
+                <img src="images/perception-cover.jpg" alt="Perception">
+                <h3>PERCEPTION</h3>
+                <p>2017</p>
+                <button class="btn-small">View Details</button>
             </div>
 
             <div class="album-card" data-category="album" data-id="search">
-                <img src="images/search-cover.jpg" alt="The Search Album">
+                <img src="images/search-cover.jpg" alt="Search">
                 <h3>THE SEARCH</h3>
                 <p>2019</p>
-                <button class="btn-small">View Tracks</button>
+                <button class="btn-small">View Details</button>
             </div>
 
-            <div class="album-card" data-category="single" data-id="clouds">
-                <img src="images/clouds-cover.jpg" alt="Clouds Single">
+            <div class="album-card" data-category="album" data-id="hope">
+                <img src="images/hope-cover.jpg" alt="Hope">
+                <h3>HOPE</h3>
+                <p>2023</p>
+                <button class="btn-small">View Details</button>
+            </div>
+
+            <div class="album-card" data-category="mixtape" data-id="clouds">
+                <img src="images/clouds-cover.jpg" alt="Clouds">
                 <h3>CLOUDS</h3>
-                <p>Single</p>
-                <button class="btn-small">View Tracks</button>
+                <p>2021</p>
+                <button class="btn-small">View Details</button>
+            </div>
+
+            
+
+            <div class="album-card" data-category="ep" data-id="fear">
+                <img src="images/fear-cover.jpg" alt="Fear">
+                <h3>FEAR</h3>
+                <p>2025</p>
+                <button class="btn-small">View Details</button>
             </div>
 
         </div>
@@ -66,11 +99,9 @@
             <span class="close-btn">&times;</span>
             <div class="modal-body">
                 <h2 id="modal-title">Album Title</h2>
-                <p id="modal-desc" class="modal-desc">Album Synopsis goes here...</p>
-                
+                <p id="modal-desc" class="modal-desc">Description</p>
                 <h3>Tracklist</h3>
-                <ul id="modal-tracklist">
-                    </ul>
+                <ul id="modal-tracklist"></ul>
             </div>
         </div>
     </div>
