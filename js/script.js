@@ -119,3 +119,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log("All Scripts Loaded Successfully");
 });
+// --- PART D: NEWSLETTER VALIDATION ---
+    const newsletterForm = document.getElementById('newsletter-form');
+    
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Stop page from reloading
+            
+            const emailInput = document.getElementById('email');
+            const emailValue = emailInput.value;
+
+            if(emailValue.includes('@') && emailValue.includes('.')) {
+                alert("Welcome to the movement. You are subscribed.");
+                emailInput.value = ""; // Clear the box
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        });
+    }
